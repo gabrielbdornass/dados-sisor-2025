@@ -27,7 +27,7 @@ def extract_resource(resource_name: str, descriptor: str = 'datapackage.yaml'):
                                    },
                         data = resource.custom['payload'],
                         stream = True)
-    breakpoint()
+    # breakpoint()
     res.raise_for_status()
 
     with open(resource.path, 'wb') as file:
